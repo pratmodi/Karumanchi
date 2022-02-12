@@ -1,0 +1,23 @@
+package com.pratmodi.one;
+
+import java.util.Scanner;
+
+public class Solution {
+
+	public static void main(java.lang.String[] args) {
+
+		 Scanner scan = new Scanner(System.in);
+	        
+	        
+	        int i = scan.nextInt();
+	        double d = scan.nextDouble();
+	        String s = scan.next().toString().concat(s);
+	        
+
+	        System.out.println("String: " + s);
+	        System.out.println("Double: " + d);
+	        System.out.println("Int: " + i);
+		
+	}
+
+}

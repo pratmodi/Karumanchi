@@ -1,0 +1,9 @@
+package com.karumachi.stack;
+
+public class FixedSizeArrayStack {
+
+	protected int capacity;
+	public static final int CAPACITY = 10;
+	protected int[] stackRep;
+	
+}

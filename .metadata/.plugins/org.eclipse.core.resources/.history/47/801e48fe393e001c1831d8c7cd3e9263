@@ -1,0 +1,5 @@
+package com.karumachi.stack;
+
+public class FixedSizeArrayStack {
+
+}

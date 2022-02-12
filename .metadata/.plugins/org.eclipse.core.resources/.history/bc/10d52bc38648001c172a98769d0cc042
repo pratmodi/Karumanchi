@@ -1,0 +1,41 @@
+package com.pratmodi.one;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Scanner;
+import java.util.Set;
+
+public class DequeueExample {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		Deque<Integer> deque = new ArrayDeque<Integer>();
+		int n = in.nextInt();
+		int m = in.nextInt();
+		int numbers = 0;
+		for (int i = 0; i < n; i++) {
+			numbers = in.nextInt();
+
+			deque.add(numbers);
+		}
+		int counter = 0;
+//		for (int z = 1; z <= numbers; z++) {
+			counter++;
+			Iterator iteratorVals = deque.iterator();
+            Set<Integer> set = new HashSet<Integer>();
+            Object[] arr = deque.toArray();
+//                System.out.println(iteratorVals.next());
+                set.add((Integer) iteratorVals.next());
+                int temp=0;
+                if(temp<m) {
+                	temp = temp++;
+                }
+            
+            
+//		}
+
+	}
+
+}

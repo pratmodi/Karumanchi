@@ -1,0 +1,8 @@
+package com.karumanchi.queues;
+
+public class FixedSizeArrayQueue {
+
+	private int[] queueRep;
+	private int size, front, rear;
+	
+}

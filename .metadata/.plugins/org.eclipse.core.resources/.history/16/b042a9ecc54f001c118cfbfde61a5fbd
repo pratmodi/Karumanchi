@@ -1,0 +1,15 @@
+
+public class CircularRotation {
+
+	public static void main(String[] args) {
+
+		String target = “7531”;
+		
+		
+	}
+	
+	public int minRotation(String[] target, String[] blocked) {
+		
+	}
+
+}

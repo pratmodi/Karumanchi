@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Solution4 {
+
+/*
+ *  1
+	21
+	321
+	4321
+ * */
+	
+public static void main(String[] args) {
+
+	Scanner sc = new Scanner(System.in);
+	int n = sc.nextInt();
+
+	for (int i = 1; i <= n; i++) {
+		for (int j = i; j <= i; j++) {
+			System.out.print(i);
+			for (int z = i; z > j; z--) {
+				System.out.print(z);
+			}
+		}
+		System.out.println();
+	}
+	sc.close();
+
+}
+
+}

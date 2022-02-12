@@ -1,0 +1,14 @@
+package com.pratmodi.one;
+
+public class SubArrays {
+
+	public static void main(String[] args) {
+		int[] array = {1, -2, 4, -5, 1};
+		numberOfNegativeSums(array);
+	}
+
+	public static int numberOfNegativeSums(int[] array) {
+		
+	}
+	
+}

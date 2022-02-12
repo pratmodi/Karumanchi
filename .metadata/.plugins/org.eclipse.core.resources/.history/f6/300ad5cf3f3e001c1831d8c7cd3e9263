@@ -1,0 +1,35 @@
+package com.karumanchi.queues;
+
+public class FixedSizeArrayQueue {
+
+	private int[] queueRep;
+	private int size, front, rear;
+	
+//Length of the array used to implement the queue..
+	private static final int CAPACITY = 16; //Default Queue size
+
+//Initializes the queue to use an array of default length..
+	public FixedSizeArrayQueue() {
+		queueRep = new int[CAPACITY];
+		size=0; front=0;rear=0; 			//WHY?
+	}
+	
+//Initializes the queue to use an array of given length..
+	public FixedSizeArrayQueue(int cap) {
+		queueRep = new int[cap];
+		size=0;front=0;rear=0;
+	}
+	
+//Inserts an element at the rear of the queue...
+	public void enQueue(int data) throws Exception {
+		if(size==CAPACITY)
+			throw new Exception("Queue is full. Overflow!");
+		else {
+			size++;
+			queueRep[rear] = data;
+			rear = (rear+1) % CAPACITY;
+		}
+	}
+	
+	
+}

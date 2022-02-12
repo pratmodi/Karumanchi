@@ -1,0 +1,17 @@
+
+public class CharPattern5 {
+
+	/*
+	 *  E
+		DE
+		CDE
+		BCDE
+		ABCDE
+	 * */
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,37 @@
+
+public class Arrays {
+
+	public static void main(String[] args) {
+
+		int[] array1 = {1, 2, 3, 4, 5, 7, 11} ;
+		int[] array2 =  {2, 3, 4, 5, 6, 8, 12} ;
+		int value = 9;
+		System.out.println(getCount(array1,array2, value));;
+	}
+
+	public static int getCount(int[] array, int[] array2, int value) {
+		int counter=0;
+		int[] arr1;
+		int[] arr2;
+		if (array.length > array2.length) {
+			arr1=array;
+			arr2=array2;
+		} else {
+			arr1=array2;
+			arr2=array;
+		}
+		for(int i=0;i<arr1.length;i++) {
+//			for(int j=0;j<array2.length;j++) {
+			int var =0;
+			if(arr2.length<=i) {
+				var=arr2[i];
+			}	
+			if(arr1[i]+var==value) {
+					counter++;
+				}
+			}
+//		}
+		return counter;
+	}
+	
+}

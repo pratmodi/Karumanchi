@@ -1,0 +1,8 @@
+package com.karumanchi.linkedlist;
+
+import com.karumanchi.intro.ListNode;
+
+public class LinkedList {
+	ListNode head;
+	private int length;
+}

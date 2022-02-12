@@ -1,0 +1,12 @@
+
+public class Circular {
+
+	public static void main(String[] args) {
+
+		String target = "7531";
+		
+		
+		
+	}
+
+}

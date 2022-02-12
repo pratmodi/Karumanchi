@@ -1,0 +1,22 @@
+package com.pratmodi.one;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Solution13 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		while (sc.hasNext()) {
+			String input = sc.next();
+			Stack<String> stack = new Stack<String>();
+			if(input.equalsIgnoreCase(""))
+				System.out.println("true");;
+			stack.add(input);
+		}
+
+	}
+
+}

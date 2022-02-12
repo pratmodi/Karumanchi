@@ -1,0 +1,16 @@
+package com.karumanchi.queues;
+
+import com.karumanchi.intro.ListNode;
+
+public class LinkedQueue {
+
+	private int length;
+	private ListNode front,rear;
+	
+//Creates an empty queue..
+	public LinkedQueue() {
+		front=rear=null;
+		length=0;
+	}
+	
+}

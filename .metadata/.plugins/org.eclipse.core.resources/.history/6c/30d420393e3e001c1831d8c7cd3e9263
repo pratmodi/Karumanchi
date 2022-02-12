@@ -1,0 +1,11 @@
+package com.karumanchi.queues;
+
+public class FixedSizeArrayQueue {
+
+	private int[] queueRep;
+	private int size, front, rear;
+	
+//Length of the array used to implement the queue..
+	private final static int CAPACITY = 16;
+	
+}

@@ -1,0 +1,27 @@
+package com.karumanchi.linkedlist;
+
+import com.karumanchi.intro.ListNode;
+
+public class LinkedList {
+	ListNode head;
+	private int length=0;
+	
+	public LinkedList() {
+		super();
+		length = 0;
+	}
+	public ListNode getHead() {
+		return head;
+	}
+	public void setHead(ListNode head) {
+		this.head = head;
+	}
+	public int getLength() {
+		return length;
+	}
+	public void setLength(int length) {
+		this.length = length;
+	}
+	
+	 
+}

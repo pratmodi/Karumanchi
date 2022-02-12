@@ -1,0 +1,19 @@
+package com.pratmodi.one;
+
+import java.util.Scanner;
+
+public class CoderByte4 {
+
+	public static String QuestionMarks(String str) {
+		return str;
+	}
+
+	public static void main(String[] args) {
+
+		// keep this function call here
+		Scanner s = new Scanner(System.in);
+		System.out.print(QuestionMarks(s.nextLine()));
+
+	}
+
+}

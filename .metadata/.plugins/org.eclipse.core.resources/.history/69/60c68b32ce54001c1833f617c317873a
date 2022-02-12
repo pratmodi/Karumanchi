@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class CharPattern3 {
+/*
+ *  A
+ 	BB
+ 	CCC
+ * */
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		
+		
+		
+		sc.close();
+	}
+
+}

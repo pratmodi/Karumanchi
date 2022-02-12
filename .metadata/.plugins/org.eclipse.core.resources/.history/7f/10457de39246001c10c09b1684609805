@@ -1,0 +1,21 @@
+package com.pratmodi.one;
+
+import java.util.Scanner;
+
+public class CurrencyConvert {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		double payment = scanner.nextDouble();
+		scanner.close();
+		double us,india,china,france;
+		while(payment>=0&&payment<=Math.pow(10, 9)) {
+			
+		}
+		System.out.println("US: " + us);
+		System.out.println("India: " + india);
+		System.out.println("China: " + china);
+		System.out.println("France: " + france);
+	}
+
+}

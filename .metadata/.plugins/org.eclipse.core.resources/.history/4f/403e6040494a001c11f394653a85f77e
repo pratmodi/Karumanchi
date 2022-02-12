@@ -1,0 +1,41 @@
+package com.pratmodi.one;
+
+import java.util.Scanner;
+
+public class CoderByte4 {
+
+	public static String QuestionMarks(String str) {
+		char[] s = str.toCharArray();
+		int counter = 0;
+		for (int i = 0; i < s.length; i++) {
+			if(Character.isDigit(s[i])) {
+				
+			}
+			if (s[i].equalsIgnoreCase("?")) {
+				counter++;
+				if (s[i + 1].equalsIgnoreCase("?")) {
+					counter++;
+					if (s[i + 2].equalsIgnoreCase("?")) {
+						counter++;
+					}
+				}
+			}
+			if (counter == 3) {
+				return "true";
+			} else {
+				return "false";
+			}
+		}
+
+		return str;
+	}
+
+	public static void main(String[] args) {
+
+		// keep this function call here
+		Scanner s = new Scanner(System.in);
+		System.out.print(QuestionMarks(s.nextLine()));
+
+	}
+
+}

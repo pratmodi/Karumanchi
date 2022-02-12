@@ -1,0 +1,34 @@
+
+public class CircularRotation {
+
+	public static void main(String[] args) {
+
+		String target = "7531";
+		String[] blocked = { "1543", "7434", "7300", "7321", "2427" };
+		String initial = "0000";
+	}
+
+	public int minRotation(String initial, String intial, String[] blocked) {
+
+		try {
+			String[] str = intial.split("");
+			for (int i = 0; i < intial.length(); i++) {
+//				initial.replace(intial.charAt(i),'9');
+				if (Integer.valueOf(str[i]) > 5) {
+					for (int j = 9; j >= 5; j--) {
+						initial.replace(intial.charAt(i), (char) j);
+					}
+				}else {
+					for (int j = 0; j <= 4; j++) {
+						initial.replace(intial.charAt(i), (char) j);
+					}	
+				}
+			}
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.pratmodi.review;
+
+public class Solution2 {
+
+	public static void main(String[] args) {
+
+		int[][] array2 = new int[10][10];
+
+		
+		for(int i=0;i<array2.length;i++) {
+			for(int j=0;j<array2.length;j++) {
+				array2[i][j] = j;
+			}
+			array2[i][j] = i;
+		}
+		
+	}
+
+}

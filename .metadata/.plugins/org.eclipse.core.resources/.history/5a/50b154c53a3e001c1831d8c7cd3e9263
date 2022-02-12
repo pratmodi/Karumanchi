@@ -1,0 +1,23 @@
+package com.karumachi.stack;
+
+public class FixedSizeArrayStack {
+
+	protected int capacity;
+	public static final int CAPACITY = 10;
+	protected int[] stackRep;
+	
+	//Index of the top element of the stack in array
+	protected int top = -1;
+
+	public FixedSizeArrayStack() {
+		this(CAPACITY);
+	}
+	
+	public FixedSizeArrayStack(int cap) {
+		capacity = cap;
+		stackRep = new int[capacity];
+	}
+	
+	
+	
+}

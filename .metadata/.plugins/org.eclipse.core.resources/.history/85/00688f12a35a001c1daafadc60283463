@@ -1,0 +1,40 @@
+package com.pratmodi.one;
+
+import java.util.Scanner;
+
+public class Solution10 {
+	public static boolean canWin(int leap, int[] game) {
+		int[] move = new int[game.length];
+		for(int i=0;i<game.length;i++) {
+		if(game[i+1]<game.length || game[i+leap]<=game.length)	{
+			if(game[i+1]==0) {
+				move[i] = game[i+1];
+			}else if(game[i+leap]==0) {
+				move[i]=game[i+leap];
+			}else if(i+leap>=game.length) {
+				return true;
+			}
+			if(move[i]==game.length)
+				return true;
+		}
+		}
+		return false;
+	}
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int q = scan.nextInt();
+		while (q-- > 0) {
+			int n = scan.nextInt();
+			int leap = scan.nextInt();
+
+			int[] game = new int[n];
+			for (int i = 0; i < n; i++) {
+				game[i] = scan.nextInt();
+			}
+
+			System.out.println((canWin(leap, game)) ? "YES" : "NO");
+		}
+		scan.close();
+	}
+}

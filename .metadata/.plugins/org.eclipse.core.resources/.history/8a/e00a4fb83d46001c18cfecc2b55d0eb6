@@ -1,0 +1,45 @@
+package com.pratmodi.one;
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+public class Result {
+
+	public static void main(String[] args) {
+
+	}
+
+	public static String findDay(int month, int day, int year) {
+		String str = "";
+		Calendar cal = new GregorianCalendar(year, month, month);
+		int number = cal.DAY_OF_WEEK;
+
+		switch (number) {
+		case 1:
+			str="MONDAY";
+			break;
+		case 2:
+			str="TUESDAY";
+			break;
+		case 3:
+			str="WEDNESDAY";
+			break;
+		case 4:
+			str="THURSDAY";
+			break;
+		case 5:
+			str="FRIDAY";
+			break;
+		case 6:
+			str="SATURDAY";
+			break;
+		case 7:
+			str="SUNDAY";
+			break;
+		default:
+			break;
+		}
+
+	}
+
+}

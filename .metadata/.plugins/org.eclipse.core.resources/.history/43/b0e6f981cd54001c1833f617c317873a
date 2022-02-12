@@ -1,0 +1,12 @@
+
+public class CharPattern3 {
+/*
+ *  A
+ 	BB
+ 	CCC
+ * */
+	public static void main(String[] args) {
+
+	}
+
+}

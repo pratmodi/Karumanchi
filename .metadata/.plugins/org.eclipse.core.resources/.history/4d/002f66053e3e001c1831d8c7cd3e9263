@@ -1,0 +1,7 @@
+package com.karumanchi.queues;
+
+public class FixedSizeArrayQueue {
+
+	
+	
+}
